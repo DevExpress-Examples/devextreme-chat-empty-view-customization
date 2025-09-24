@@ -1,3 +1,33 @@
-<div class="default-style">
-  <dx-button [text]="buttonText" (onClick)="onClick($event)"></dx-button>
+<div class="demo-viewport">
+  <dx-chat
+    id="chat"
+    [width]="780"
+    [height]="480"
+    emptyViewTemplate="emptyView"
+  >
+    <div *dxTemplate="let data of 'emptyView'">
+      <div class="empty-view-titlebox">
+        <div class="empty-view-title">How can HR Assistant help you today?</div>
+        <div class="empty-view-subtitle">{{data.texts.message}}</div>
+      </div>
+      <dx-tile-view
+        id="tile-view-container"
+        [dataSource]="tiles"
+        [width]="728"
+        [height]="124"
+        [baseItemWidth]="226"
+        [baseItemHeight]="96"
+        [itemMargin]="12"
+        [activeStateEnabled]="false"
+        itemTemplate="itemTemplate"
+      >
+        <div *dxTemplate="let itemData of 'itemTemplate'">
+          <div class="tile-container">
+            <div class="tile-emoji">{{itemData.emoji}}</div>
+            <div class="tile-text">{{itemData.text}}</div>
+          </div>
+        </div>
+      </dx-tile-view>
+    </div>
+  </dx-chat>
 </div>
