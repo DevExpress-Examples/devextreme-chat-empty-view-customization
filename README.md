@@ -9,7 +9,7 @@ This example configures custom markup used for empty view within the DevExtreme 
 
 ![DevExtreme Chat - Empty View Customization](images/devextreme-chat-empty-view-customization.png)
 
-To configure the Chat empty view, specify the [emptyViewTemplate](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxChat/Configuration/#emptyViewTemplate) property. This example integrates the DevExtreme [TileView](https://js.devexpress.com/Documentation/Guide/UI_Components/TileView/Overview/) component within the empty view container. The **texts**.**message** variable defined in the **emptyViewTemplate** parameter is also implemented.
+Specify the [emptyViewTemplate](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxChat/Configuration/#emptyViewTemplate) to configure this area. This example embeds the DevExtreme [TileView](https://js.devexpress.com/Documentation/Guide/UI_Components/TileView/Overview/) component into the empty view container. The empty view also displays a predefined message (**data**.**texts**.**message**).
 
 ## Files to Review
 
