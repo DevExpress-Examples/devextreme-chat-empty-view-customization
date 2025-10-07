@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import 'devextreme/dist/css/dx.fluent.blue.light.css';
-import Chat from 'devextreme-react/chat';
+import { Chat, type ChatTypes } from 'devextreme-react/chat';
 import TileView from 'devextreme-react/tile-view';
 
 interface TileData {
@@ -29,7 +29,7 @@ function renderItem(data: TileData): JSX.Element {
   );
 }
 
-function renderEmptyView(data: { texts: { message: string } }): JSX.Element {
+function renderEmptyView(data: ChatTypes.EmptyViewTemplateData): JSX.Element {
   return (
     <React.Fragment>
       <div className="empty-view-titlebox">
