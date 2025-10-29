@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import './App.css';
 import 'devextreme/dist/css/dx.fluent.blue.light.css';
 import { Chat, type ChatTypes } from 'devextreme-react/chat';
@@ -52,12 +52,20 @@ function renderEmptyView(data: ChatTypes.EmptyViewTemplateData): JSX.Element {
 }
 
 function App(): JSX.Element {
+  const [messages, setMessages] = useState<ChatTypes.Message[]>([]);
+
+  const onMessageEntered = useCallback((e: ChatTypes.MessageEnteredEvent) => {
+    setMessages((prevMessages) => [...prevMessages, e.message]);
+  }, []);
+
   return (
     <div className="demo-container">
       <Chat
         id="chat"
         width={780}
         height={480}
+        items={messages}
+        onMessageEntered={onMessageEntered}
         emptyViewRender={renderEmptyView}
       />
     </div>
