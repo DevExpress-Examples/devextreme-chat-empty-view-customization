@@ -1,7 +1,8 @@
 <script setup lang="ts">
+import { ref, type Ref } from 'vue';
 import 'devextreme/dist/css/dx.fluent.blue.light.css';
-import DxChat from 'devextreme-vue/chat';
-import DxTileView from 'devextreme-vue/tile-view';
+import { DxChat, type DxChatTypes } from 'devextreme-vue/chat';
+import { DxTileView } from 'devextreme-vue/tile-view';
 
 const tiles = [{
   emoji: '🗓️',
@@ -13,12 +14,20 @@ const tiles = [{
   emoji: '📄',
   text: 'Submit a Vacation Request',
 }];
+
+const messages: Ref<DxChatTypes.Message[]> = ref([]);
+
+function onMessageEntered(e: DxChatTypes.MessageEnteredEvent): void {
+  messages.value = [...messages.value, e.message];
+}
 </script>
 <template>
   <DxChat
     id="chat"
     :width="780"
     :height="480"
+    :items="messages"
+    @message-entered="onMessageEntered"
     empty-view-template="emptyView"
   >
     <template #emptyView="{ data }">
