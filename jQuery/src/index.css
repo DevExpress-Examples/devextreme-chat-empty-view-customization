@@ -32,11 +32,11 @@
   padding: 40px;
 }
 
-.dx-chat-messagegroup-alignment-start .dx-chat-messagebubble {
+.dx-chat-messagegroup-alignment-start .dx-chat-messagegroup-content .dx-chat-messagebubble {
   background-color: #CFE4FA;
 }
 
-.dx-chat-messagegroup-alignment-end .dx-chat-messagebubble {
+.dx-chat-messagegroup-alignment-end .dx-chat-messagegroup-content .dx-chat-messagebubble {
   background-color: #F7C0E3;
 }
 
