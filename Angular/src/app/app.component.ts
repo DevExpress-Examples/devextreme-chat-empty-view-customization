@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { type DxChatTypes } from 'devextreme-angular/ui/chat';
 
 @Component({
   selector: 'app-root',
@@ -16,4 +17,10 @@ export class AppComponent {
     emoji: '📄',
     text: 'Submit a Vacation Request',
   }];
+
+  messages: DxChatTypes.Message[] = [];
+ 
+  onMessageEntered(e: DxChatTypes.MessageEnteredEvent): void {
+      this.messages = [...this.messages, e.message];
+  }
 }

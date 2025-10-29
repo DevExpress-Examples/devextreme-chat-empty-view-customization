@@ -1,5 +1,12 @@
 <div class="demo-viewport">
-  <dx-chat id="chat" [width]="780" [height]="480" emptyViewTemplate="emptyView">
+  <dx-chat
+    id="chat"
+    [width]="780"
+    [height]="480"
+    [items]="messages"
+    (onMessageEntered)="onMessageEntered($event)"
+    emptyViewTemplate="emptyView"
+  >
     <div *dxTemplate="let data of 'emptyView'">
       <div class="empty-view-titlebox">
         <div class="empty-view-title">How can HR Assistant help you today?</div>
