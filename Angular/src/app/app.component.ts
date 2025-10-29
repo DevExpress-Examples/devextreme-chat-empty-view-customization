@@ -19,8 +19,8 @@ export class AppComponent {
   }];
 
   messages: DxChatTypes.Message[] = [];
- 
+
   onMessageEntered(e: DxChatTypes.MessageEnteredEvent): void {
-      this.messages = [...this.messages, e.message];
+    this.messages = [...this.messages, e.message];
   }
 }
