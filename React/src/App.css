@@ -3,14 +3,14 @@
   width: 90vw;
 }
 
-.demo-container {
+.demo-viewport {
   height: 800px;
   display: flex;
   align-items: start;
   justify-content: center;
 }
 
-.demo-container .dx-chat {
+.demo-viewport #chat {
   min-height: 0;
 }
 

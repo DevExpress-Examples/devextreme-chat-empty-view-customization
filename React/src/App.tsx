@@ -59,7 +59,7 @@ function App(): JSX.Element {
   }, []);
 
   return (
-    <div className="demo-container">
+    <div className="demo-viewport">
       <Chat
         id="chat"
         width={780}
