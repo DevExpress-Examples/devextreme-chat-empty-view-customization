@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+.demo-viewport #chat {
+  min-height: 0;
+}
+
 .empty-view-titlebox {
   height: 60px;
   display: flex;
