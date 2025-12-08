@@ -3,8 +3,6 @@
     id="chat"
     [width]="780"
     [height]="520"
-    [items]="messages"
-    (onMessageEntered)="onMessageEntered($event)"
     emptyViewTemplate="emptyView"
   >
     <div class="empty-view-container" *dxTemplate="let data of 'emptyView'">
