@@ -4,19 +4,13 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-# DevExtreme Examples Template
+# DevExtreme Chat - Empty View Customization
 
-This is the repository template for creating new examples. 
+This example configures custom markup used for an empty view within the DevExtreme Chat component.
 
-![Example image](images/image-template.png)
+![DevExtreme Chat - Empty View Customization](images/devextreme-chat-empty-view-customization.png)
 
-Use **DevExtreme _Product_ - _Task_** template for a title. 
-
-Describe the solved task in this section.
-
-Put a screenshot/gif that illustrates the result here.
-
-Then, add implementation details (steps, code snippets, and other technical information in a free form), or add a link to an existing document with implementation details. 
+Use the [emptyViewTemplate](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxChat/Configuration/#emptyViewTemplate) to configure this region. This example embeds the DevExtreme [TileView](https://js.devexpress.com/Documentation/Guide/UI_Components/TileView/Overview/) component into the empty view container. The empty view also displays a predefined message (`data.texts.message`).
 
 ## Files to Review
 
@@ -31,20 +25,12 @@ Then, add implementation details (steps, code snippets, and other technical info
 - **jQuery**
     - [index.html](jQuery/src/index.html)
     - [index.js](jQuery/src/index.js)
-- **ASP.NET Core**    
-    - [Index.cshtml](ASP.NET%20Core/Views/Home/Index.cshtml)
 
 ## Documentation
 
-- link
-- link
-- ...
+- [DevExtreme Chat - Customize the Empty View](https://js.devexpress.com/Documentation/Guide/UI_Components/Chat/Customize_the_Empty_View/)
+- [emptyViewTemplate](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxChat/Configuration/#emptyViewTemplate)
 
-## More Examples
-
-- link
-- link
-- ...
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
 
