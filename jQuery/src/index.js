@@ -37,16 +37,11 @@ $(() => {
               $('<div>').addClass('tile-emoji').text(itemData.emoji),
               $('<div>').addClass('tile-text').text(itemData.text),
             );
-
             return $itemContainer;
           },
         }),
       );
-
       return $container;
-    },
-    onMessageEntered: ({ component, message }) => {
-      component.renderMessage(message);
     },
   });
 });
