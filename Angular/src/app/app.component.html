@@ -2,12 +2,12 @@
   <dx-chat
     id="chat"
     [width]="780"
-    [height]="480"
+    [height]="520"
     [items]="messages"
     (onMessageEntered)="onMessageEntered($event)"
     emptyViewTemplate="emptyView"
   >
-    <div *dxTemplate="let data of 'emptyView'">
+    <div class="empty-view-container" *dxTemplate="let data of 'emptyView'">
       <div class="empty-view-titlebox">
         <div class="empty-view-title">How can HR Assistant help you today?</div>
         <div class="empty-view-subtitle">{{ data.texts.message }}</div>
