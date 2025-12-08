@@ -12,7 +12,7 @@ const tiles = [{
 $(() => {
   $('#chat').dxChat({
     width: 780,
-    height: 480,
+    height: 520,
     emptyViewTemplate: (data) => {
       const $container = $('<div>').addClass('empty-view-container').css({ 'width': '100%', 'height': '100%' });
       $container.append(
