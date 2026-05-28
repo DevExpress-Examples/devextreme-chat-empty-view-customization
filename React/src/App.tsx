@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import 'devextreme/dist/css/dx.fluent.blue.light.css';
 import { Chat, type ChatTypes } from 'devextreme-react/chat';
