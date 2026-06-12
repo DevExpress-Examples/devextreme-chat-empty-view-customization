@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { DxChatModule } from 'devextreme-angular/ui/chat';
 import { DxTileViewModule } from 'devextreme-angular/ui/tile-view';
 
@@ -6,6 +6,7 @@ import { DxTileViewModule } from 'devextreme-angular/ui/tile-view';
   selector: 'app-root',
   imports: [DxChatModule, DxTileViewModule],
   templateUrl: './app.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
